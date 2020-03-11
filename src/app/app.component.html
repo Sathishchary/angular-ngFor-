@@ -1,0 +1,27 @@
+<div class="container">
+  Default key order
+	<div *ngFor="let item of object | keyvalue">
+		{{item.key}} : {{item.value}}
+	</div>
+</div>
+<hr/>
+<div class="container">
+  Original property order
+	<div *ngFor="let item of object | keyvalue: originalOrder">
+		{{item.key}} : {{item.value}}
+	</div>
+</div>
+<hr/>
+<div class="container">
+  Reverse key order
+	<div *ngFor="let item of object | keyvalue: reverseKeyOrder">
+		{{item.key}} : {{item.value}}
+	</div>
+</div>
+<hr/>
+<div class="container">
+  Value order
+	<div *ngFor="let item of object | keyvalue: valueOrder">
+		{{item.key}} : {{item.value}}
+	</div>
+</div>
